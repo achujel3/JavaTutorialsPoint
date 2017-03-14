@@ -2,7 +2,9 @@ package com.tutorialspoint.a8.date;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class Main {
     public static void main(String args[]) throws InterruptedException {
@@ -41,5 +43,24 @@ public class Main {
         long diff = compare2 - compare1;
         System.out.println(diff);
 
+        Date dateOne = new Date();
+        Thread.sleep(2000);
+        Date dateTwo = new Date();
+        System.out.println(dateOne.before(dateTwo) ? "this is true" : "this is false");
+
+        int year;
+        GregorianCalendar gregorianCalendar = new GregorianCalendar();
+        System.out.println("Gregorian time: ");
+        System.out.println(gregorianCalendar.getTime());
+        String[] months = {"January", "February", "March", "April", "May", "June", "July", "October", "November", "December"};
+        
+        System.out.println(months[gregorianCalendar.get(Calendar.MONTH)]);
+        System.out.println(year = gregorianCalendar.get(Calendar.YEAR));
+
+        if(gregorianCalendar.isLeapYear(year)) {
+            System.out.println("This is a leap year");
+        } else {
+            System.out.println("This is NOT a leap year");
+        }
     }
 }
