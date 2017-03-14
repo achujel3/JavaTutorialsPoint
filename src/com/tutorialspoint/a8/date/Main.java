@@ -53,7 +53,7 @@ public class Main {
         System.out.println("Gregorian time: ");
         System.out.println(gregorianCalendar.getTime());
         String[] months = {"January", "February", "March", "April", "May", "June", "July", "October", "November", "December"};
-        
+
         System.out.println(months[gregorianCalendar.get(Calendar.MONTH)]);
         System.out.println(year = gregorianCalendar.get(Calendar.YEAR));
 
