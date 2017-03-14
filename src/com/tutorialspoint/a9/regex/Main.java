@@ -20,7 +20,7 @@ public class Main {
         if (matcher.find()) {
             try {
                 for (i = 0; i <= n; i++) {
-                    System.out.println(i + ". Found value: " + m.group(i));
+                    System.out.println(i + ". Found value: " + matcher.group(i));
                 }
             } catch (IndexOutOfBoundsException e) {
                 System.out.println(i + ". No more groups!");
