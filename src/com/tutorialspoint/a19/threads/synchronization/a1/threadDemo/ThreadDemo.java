@@ -1,4 +1,4 @@
-package com.tutorialspoint.a19.threads.threadDemo;
+package com.tutorialspoint.a19.threads.synchronization.a1.threadDemo;
 
 public class ThreadDemo extends Thread {
 
