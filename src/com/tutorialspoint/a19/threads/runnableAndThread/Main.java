@@ -27,7 +27,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        System.out.println("Starting thread4...");
+        System.out.println("Starting thread 4...");
         Thread thread4 = new GuessANumber(75);
 
         thread4.start();
